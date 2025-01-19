@@ -1,5 +1,6 @@
 :root{
     --clr-navbar-links: #c5adad;
+    --clr-tomato: tomato;
 }
 
 .navbar{
@@ -19,4 +20,65 @@
     gap: 20px;
     font-size: 2rem;
     color: var(--clr-navbar-links);
+}
+
+/* Getting rid of underline of navbar links */
+.navbar-menu a{
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--clr-tomato);
+}
+
+
+/* Right side items of navbar (Search, shop, sign in) */
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* 
+Defining structure of sign in button in navbar
+Transition sets speed at which it transitions (used for hover)
+*/
+.navbar button{
+    background: transparent;
+    font-size: 16px;
+    color: var(--clr-navbar-links);
+    border: 1px solid var(--clr-tomato);
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Changing the colour of the button whenever cursor hovers over it */
+.navbar button:hover{
+    background-color: var(--clr-tomato);
+    color: white;
+}
+
+/* This will display an underline for the section that we are currently in within the menu based on menu useState */
+.navbar .active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid #494949;
+}
+
+
+.navbar-search-icon{
+    position: relative;
+}
+
+/* 
+This builds the little orange dot above the cart icon
+The dot represents if there is an item in the cart
+*/
+.navbar-search-icon .dot{
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: var(--clr-tomato);
+    border-radius: 5px;
+    top: -8px;
+    right: -8px;
 }
