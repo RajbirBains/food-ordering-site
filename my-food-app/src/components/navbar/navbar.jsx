@@ -9,7 +9,7 @@ const Navbar = () => {
     const [menu, setMenu] = useState("home");
 
     return(
-        <div class = "navbar">
+        <div className = "navbar">
             <img src={assets.logo} alt="Logo" className="logo"></img>
             <ul className="navbar-menu">
                 <li className="navbar-item" id="nav-Home">

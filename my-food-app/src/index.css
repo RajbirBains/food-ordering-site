@@ -19,3 +19,19 @@ code {
   width: 80%;
   margin: auto;
 }
+
+/* 
+Used for fade in transition 
+Ex. In a property we can set 
+animation : fadeIn 3s
+which will fade that property in over 3 seconds
+*/
+@keyframes fadeIn {
+  0% {
+    opacity: 0%;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
