@@ -33,7 +33,7 @@
 }
 
 /* Menu item images */
-.explore-menu-list-item{
+.explore-menu-list-item img{
     width: 7.5vw;
     min-width: 80px;
     cursor: pointer;
@@ -59,8 +59,6 @@
 
 /* 
 When an item is selected, display an orange circle around it indicating it is active
-
-TODO: Find out why items shift down and border does not inherit border-radius property from parent .explore-menu-list-item property
 */
 .explore-menu-list-item .active{
     border: 4px solid tomato;
